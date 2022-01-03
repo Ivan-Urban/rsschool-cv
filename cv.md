@@ -22,3 +22,13 @@ function multiply(a, b) {
 
 ## Work experience
 Nothing yet
+
+## Education
+* **University:** Belarusian State University (in process)
+* **Courses:**
+    * [JavaScript (in process)](https://www.udemy.com/course/javascript_full/)
+    * [RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)](https://community-z.com/events/js-stage0-rss-2021q4)
+
+## Languages
+* English — Intermediate
+* Russian — Native
