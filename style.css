@@ -29,7 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: 'Tinos';
+    font-family: 'Tinos-Regular.ttf';
     font-size: 18px;
     line-height: 1.5;
     color: rgb(75, 75, 75);
@@ -45,13 +45,19 @@ body {
 .main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 10%;
     flex-grow: 1;
 }
 
 .footer {
+    display: flex;
+    padding: 10px 30px;
     height: 70px;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(75, 75, 75);
+    color: white
 }
 
 .nav {
@@ -83,25 +89,35 @@ body {
 }
 
 .section {
-    width: 50%;
+    width: calc(50% - 20px);
     display: flex;
+    padding: 10px 10px 20px;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(130, 130, 130);
 }
 
 .main-section {
     width: 100%;
     justify-content: flex-end;
-    align-items: center
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 15px solid rgb(130, 130, 130); 
+}
+
+.last-section {
+    border: none
 }
 
 .section-title {
     font-family: Roboto;
-    font-size: 30px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: rgb(44, 44, 44);
 }
 
 .name {
     display: flex;
+    font-size: 30px;
     position: relative;
     right: 250px;
     letter-spacing: 5px;
@@ -115,4 +131,46 @@ body {
     position: relative;
     right: 500px;
     border-radius: 50%;
+}
+
+.span {
+    font-weight: 600;
+}
+
+.list {
+    padding-left: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color:rgb(102, 50, 50)    
+}
+
+.link:hover {
+    text-decoration: underline;
+    color:rgb(136, 66, 155);
+}
+
+.link:visited {
+    color:rgb(136, 66, 155);
+}    
+
+.rss {
+    height: 40px;
+    width: 108px;
+    background-image: url(./assets/img/rs_school.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.github {
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+    color: white
+}
+
+.github:hover {
+    text-decoration: underline;
+    color: rgb(167, 145, 145)     
 }
