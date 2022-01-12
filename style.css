@@ -32,7 +32,8 @@ body {
     font-family: 'Tinos';
     font-size: 18px;
     line-height: 1.5;
-    color: rgb(97, 84, 84);
+    color: rgb(75, 75, 75);
+    background-color: rgb(202, 202, 202);
 }
 
 .header {
@@ -44,8 +45,8 @@ body {
 .main {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 10%;
     flex-grow: 1;
-    background-color: rgb(202, 202, 202);
 }
 
 .footer {
@@ -83,14 +84,35 @@ body {
 
 .section {
     width: 50%;
+    display: flex;
 }
 
-#profile {
+.main-section {
     width: 100%;
+    justify-content: flex-end;
+    align-items: center
 }
 
 .section-title {
     font-family: Roboto;
     font-size: 30px;
     text-transform: uppercase;
+    color: rgb(44, 44, 44);
+}
+
+.name {
+    display: flex;
+    position: relative;
+    right: 250px;
+    letter-spacing: 5px;
+}
+
+.my_photo {
+    height: 240px;
+    width: 240px;
+    padding: 10px;
+    background: rgb(75, 75, 75);
+    position: relative;
+    right: 500px;
+    border-radius: 50%;
 }
