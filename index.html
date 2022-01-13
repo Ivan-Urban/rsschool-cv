@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/img/paw.ico">
+    <title>CV</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#myself" class="nav-link">About myself</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#language" class="nav-link">Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section main-section" id="profile">
+            <img src="./assets/img/my_photo.jpg" alt="My photo" class="my_photo">
+            <h1 class="section-title name">Ivan Urbanovich</h1>
+        </section>
+
+        <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="list">
+                <li><span class="span">Discord:</span> Ivan(@Ivan-Urban)</li>
+                <li><span class="span">E-mail:</span> ivan.urbanovich.00@gmail.com</li>
+                <li><span class="span">Phone:</span> +375333531447</li>
+            </ul>
+        </section>
+
+        <section class="section" id="myself">
+            <h2 class="section-title">About myself</h2>
+            <p>
+                I am 19 years old. I am a student. 
+                I’m studying physics, but I found programming interesting 
+                and after a while I discovered JS and web development and now I’m here.
+            </p>
+        </section>
+
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="list">
+                <li>HTML (basic)</li>
+                <li>CSS (basic)</li>
+                <li>JavaScript (basic)</li>
+            </ul>
+        </section>
+
+        <section class="section" id="code">
+            <h2 class="section-title">Code exaple</h2>
+            <pre class="pre">
+                <code>
+function multiply(a, b) {
+    return (a*b);
+}
+                </code>
+            </pre>
+        </section>
+
+        <section class="section education-section" id="education">
+            <h2 class="section-title">Education</h2>
+            <ul class="list">
+                <li><span class="span">University:</span> Belarusian State University (in process)</li>
+                <li><span class="span">Courses:</span> 
+                    <ul class="list">
+                        <li><a href="https://www.udemy.com/course/javascript_full/" class="link">JavaScript (in process)</a></li>
+                        <li><a href="https://community-z.com/events/js-stage0-rss-2021q4" class="link">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section last-section" id="language">
+            <h2 class="section-title">Language</h2>
+            <ul class="list">
+                <li><span class="span">English</span> — Intermediate</li>
+                <li><span class="span">Russian</span> — Native</li>
+            </ul>
+        </section>       
+    </main>
+    <footer class="footer">
+        <div>© 2022</div>
+        <a href="https://github.com/Ivan-Urban" class="github">Ivan-Urban</a>
+        <a href="https://rs.school/js/" class="rss"></a>    
+    </footer>
+</body>
+</html>
