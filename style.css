@@ -8,11 +8,7 @@
     src: url(./assets/fonts/Tinos-Regular.ttf);
 }
 
-@media (max-width: 768px) {
-    .section {
-        width: 100%;
-    }
-}
+
 
 * {
     box-sizing: border-box;
@@ -34,6 +30,7 @@ body {
     line-height: 1.5;
     color: rgb(75, 75, 75);
     background-color: rgb(202, 202, 202);
+    overflow: auto;
 }
 
 .header {
@@ -62,11 +59,10 @@ body {
 
 .nav {
     height: 100%;
+    padding: 0 50px;
 }
 
 .nav-list {
-    position: relative;
-    right: 100px;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -97,8 +93,9 @@ body {
 }
 
 .main-section {
+    display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     border-bottom: 15px solid rgb(130, 130, 130); 
@@ -106,6 +103,10 @@ body {
 
 .last-section {
     border: none
+}
+
+.education-section {
+    border: none    
 }
 
 .section-title {
@@ -118,8 +119,6 @@ body {
 .name {
     display: flex;
     font-size: 30px;
-    position: relative;
-    right: 250px;
     letter-spacing: 5px;
 }
 
@@ -128,8 +127,6 @@ body {
     width: 240px;
     padding: 10px;
     background: rgb(75, 75, 75);
-    position: relative;
-    right: 500px;
     border-radius: 50%;
 }
 
@@ -173,4 +170,31 @@ body {
 .github:hover {
     text-decoration: underline;
     color: rgb(167, 145, 145)     
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+
+    .main-section {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .education-section {
+        border-bottom: 1px solid rgb(130, 130, 130);    
+    }
+
+    .nav-list {
+        position: static;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 880px) {
+    .nav-list {
+        font-size: 14px;
+    }
 }
